@@ -1,0 +1,12 @@
+name: devlopr-jekyll CI
+
+on: [push]
+
+jobs:
+  build:
+    name: build devlopr jekyll site
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Jekyll Action
+      uses: helaili/jekyll-action@1.0
