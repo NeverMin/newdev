@@ -21,7 +21,7 @@ urls:
 
 author_logo: profile.jpg
 author: 牛牛
-author_bio: Hi, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.
+author_bio: 大数据, 人工智能开发团队, 比客户更了解他自己.
 author_email: "59808@qq.com"
 author_location: China
 author_website_url: "https://NewDev.cn"
@@ -62,7 +62,7 @@ author_project_details:
 
 # social links
 #twitter_username: johndoe
-#github_username:  johndoe
+github_username:  hackerTeam2019
 #facebook_username: johndoe
 #linkedin_username: johndoe
 #behance_username: johndoe
