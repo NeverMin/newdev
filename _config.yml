@@ -8,17 +8,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 lang: zh-cn
 
 urls:
-    - text: Blog
+    - text: 博 客
       url: /blog
-    - text: Shop
+    - text: 产品及服务
       url : /shop/
-    - text: About
+    - text: 关于牛牛
       url: /about/
-    - text: Contact
+    - text: 联系我们
       url : /contact/
-    - text: Styleguide
-      url: /styleguide/
-
 
 # Edit these details
 
@@ -76,13 +73,13 @@ author_project_details:
 #flickr_username: johndoe
 
 #for comments using disqus
-disqus_shortname: sujay-kundu
+#disqus_shortname: sujay-kundu
 
 # wakatime username (coding activity)
-wakatime_username: zammad
+#wakatime_username: zammad
 
 # formspree (contact form)
-formspree_email: johndoe@gmail.com
+#formspree_email: johndoe@gmail.com
 
 # syntax highlighter
 markdown: kramdown
@@ -109,11 +106,11 @@ plugins:
 
 # algolia search
 algolia:
-  application_id: D9WA1YKTRQ
+  application_id: EF7GR6REPN
   index_name: blog_posts # You can replace that with whatever name you want
   files_to_exclude: []
   nodes_to_index: 'article'
-  search_only_api_key: 58ffdd7cd6c45ec1577a7fcd789b1b9a
+  search_only_api_key: 9c0503834f7d21157014f4496ea7fa00
 
 # pagination of posts
 paginate: 8
