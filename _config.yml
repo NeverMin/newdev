@@ -87,7 +87,7 @@ highlighter: rouge
 permalink: pretty
 
 # google analytics
-google_analytics: UA-46783401-10
+google_analytics: UA-149941006-1
 
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
@@ -107,7 +107,7 @@ plugins:
 # algolia search
 algolia:
   application_id: EF7GR6REPN
-  index_name: blog_posts # You can replace that with whatever name you want
+  index_name: NewDev # You can replace that with whatever name you want
   files_to_exclude: []
   nodes_to_index: 'article'
   search_only_api_key: 9c0503834f7d21157014f4496ea7fa00
