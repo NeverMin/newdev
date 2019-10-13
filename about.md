@@ -1,6 +1,6 @@
 ---
 title: About
 menus: header
-layout: about_me
+layout: about_us
 permalink: /about
 ---
