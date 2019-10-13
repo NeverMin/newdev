@@ -1,14 +1,14 @@
 title: 牛牛
 subtitle: 大数据, 人工智能开发团队, 比客户更了解他自己.
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a Jekyll Theme Built For Developers
+  大数据, 人工智能开发团队, 比客户更了解他自己.
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: zh-cn
 
 urls:
-    - text: 博 客
+    - text: 技术博客
       url: /blog
     - text: 产品及服务
       url : /shop/
@@ -22,9 +22,9 @@ urls:
 author_logo: profile.jpg
 author: 牛牛
 author_bio: Hi, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.
-author_email: "johndoe@gmail.com"
-author_location: India
-author_website_url: "http://johndoe.com"
+author_email: "59808@qq.com"
+author_location: China
+author_website_url: "https://NewDev.cn"
 
 author_work_experiences:
             - company_name: Google
