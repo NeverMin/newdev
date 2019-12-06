@@ -1,0 +1,22 @@
+{% if jekyll.environment == "production" %}
+  <script src="https://u.zammad.com.cn/assets/chat/chat.min.js"></script>
+  <script>
+  $(function() {
+    new ZammadChat({
+      background: '#4f483a',
+      fontSize: '12px',
+      chatId: 1
+    });
+  });
+  </script>
+  <script id="zammad_form_script" src="https://u.zammad.com.cn/assets/form/form.js"></script>
+  <script>
+  $(function() {
+    $('#feedback-form').ZammadForm({
+      messageTitle: 'Feedback Form',
+      messageSubmit: '提交',
+      messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as   possible.'
+    });
+  });
+  </script>
+{% endif %}

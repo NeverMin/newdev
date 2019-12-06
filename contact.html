@@ -1,0 +1,33 @@
+---
+title: 联系我们
+layout: default
+bodyClass: page-contact
+---
+
+<div class="intro pd-4">
+  <div class="container">
+    <h1>联系我们</h1>
+    <p>我们乐于倾听您的声音, 请使用您方便的联系方式找到我们.</p>
+  </div>
+</div>
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <ul>
+        <li><strong>工单系统: </strong><a href="https://u.zammad.com.cn/">u.zammad.com.cn</a></li>
+        <li><strong>联系电话: </strong>{{ site.data.contact.phone }}</li>
+        <li><strong>电子邮件: </strong><a href="mailto:{{ site.data.contact.email }}">
+            {{ site.data.contact.email }}</a></li>
+        <li><strong>微信 /QQ : </strong>{{ site.data.contact.wechat }}</li>
+        {% if site.data.contact.address %}
+        <li><strong>联系地址: </strong>{{ site.data.contact.address }}</li>
+        {% endif %}
+      </ul>
+      <h2 class="mt-4">留 言</h2>
+        <div id="feedback-form">form will be placed in here</div>
+    </div>
+  </div>
+</div>
+<div class="container pt-8 pt-md-10">
+  <p><i>提交此表单即表明我同意 {{ site.credit }} 使用我的姓名、电子邮件地址、电话号码和居住国信息而提供支持服务。我同意 {{ site.credit }} 可以根据 {{ site.credit }} 隐私政策，因此目的使用第三方服务处理上述数据。</i></p>
+</div>
