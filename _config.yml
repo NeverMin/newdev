@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: '/newdev'
 exclude: ['README.md']
 permalink: pretty
 title: 'NewDev'
