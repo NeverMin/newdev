@@ -1,29 +1,26 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en " }}">
-
-{%- include head.html -%}
-
-<body>
-    <div class="container-fluid">
-
-        {%- include header.html -%}
-
-        <div class="col-lg-12">
-
-            {{ content }}
-
-        </div>
-
-        {%- include footer.html -%}
-
-    </div>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="{{site.baseurl}}/images/favicon.ico">
+  <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
+  <script src="//lib.baomitu.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body class='page {{page.bodyClass}}'>
+  {% include main-menu-mobile.html %}
+  <div id="wrapper" class="wrapper">
+    {% include header.html headerClass='header-extra' %}
+    {{content}}
+  </div>
+  {% include footer.html %}
+  {% include sub-footer.html %}
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+  {% include google-analytics.html %}
+  {% include zammad_chat_from.html %}
 </body>
-
-<!--
-<div hidden id="snipcart" data-api-key="Y2I1NTAyNWYtMTNkMy00ODg0LWE4NDItNTZhYzUxNzJkZTI5NjM3MDI4NTUzNzYyMjQ4NzU0"></div>
-<script src="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.js" defer></script>-->
 </html>

@@ -1,159 +1,47 @@
-title: 牛牛
-subtitle: 大数据, 人工智能开发团队, 比客户更了解他自己.
-description: >- # this means to ignore newlines until "baseurl:"
-  大数据, 人工智能开发团队, 比客户更了解他自己.
-
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
-lang: zh-cn
-
-urls:
-    - text: 技术博客
-      url: /blog
-    - text: 产品及服务
-      url : /shop/
-    - text: 关于牛牛
-      url: /about/
-    - text: 联系我们
-      url : /contact/
-
-# Edit these details
-
-author_logo: profile.jpg
-author: 牛牛
-author_bio: 大数据, 人工智能开发团队, 比客户更了解他自己.
-author_email: "59808@qq.com"
-author_location: China
-author_website_url: "https://NewDev.cn"
-
-author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: true
-
-author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
-                visibility: true
-
-author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: programmingebooks.png
-                project_title: Programming Ebooks
-                project_description: A Platform to easily find and read programming books
-                project_url: https://programmingebooks.com
-                visibility: true
-
-# social links
-#twitter_username: johndoe
-github_username:  hackerTeam2019
-#facebook_username: johndoe
-#linkedin_username: johndoe
-#behance_username: johndoe
-#instagram_username: johndoe
-#medium_username: johndoe
-#telegram_username: johndoe
-#dribbble_username: johndoe
-#flickr_username: johndoe
-
-#for comments using disqus
-#disqus_shortname: sujay-kundu
-
-# wakatime username (coding activity)
-#wakatime_username: zammad
-
-# formspree (contact form)
-#formspree_email: johndoe@gmail.com
-
-# syntax highlighter
-markdown: kramdown
-highlighter: rouge
+baseurl: ''
+exclude: ['README.md']
 permalink: pretty
+title: 'NewDev'
+credit: 'NewDev ShangHai'
+slogan: 'Start building strong relationships with your customers.'
 
-# google analytics
-google_analytics: UA-149941006-1
+collections:
+  services:
+    output: true
+    permalink: /services/:path/
+  team:
+    output: true
+    permalink: /team/:path/
+  testimonials:
+    output: true
+    permalink: /testimonials/:path/
 
-# Choose what to show ( can be true or false)
-show_author_work_experiences: true
-show_author_education_details: true
-show_author_project_details: true
+defaults:
+  - scope:
+      type: services
+    values:
+      layout: service
+      bodyClass: page-services-single
+  - scope:
+      path: 'images'
+    values:
+      image: true
 
-# dont touch this unless required
+sass:
+  style: compact # possible values: nested expanded compact compressed
+
+google_analytics_id: UA-149941006-1
+
 plugins:
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-algolia
-# - jekyll-archives
+  - jekyll-environment-variables
 
-# algolia search
-algolia:
-  application_id: EF7GR6REPN
-  index_name: NewDev # You can replace that with whatever name you want
-  files_to_exclude: []
-  nodes_to_index: 'article'
-  search_only_api_key: 9c0503834f7d21157014f4496ea7fa00
-
-# pagination of posts
-paginate: 8
-per_page: 4
-paginate_path: "/blog/page/:num/"
-
-# minify
+# Used › default.html front-matter and compress.html
+# export JEKYLL_ENV=production # ENV["JEKYLL_ENV"]
+# Options › http://jch.penibelst.de
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
   endings: all
+  profile: false
   ignore:
-    envs: ['development']
-
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
-
-
-collections:
- - products
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-exclude:
- - .sass-cache/
- - .jekyll-cache/
- - gemfiles/
- - Gemfile
- - Gemfile.lock
- - devlopr.gemspec
- - node_modules/
- - vendor/bundle/
- - vendor/cache/
- - vendor/gems/
- - vendor/ruby/
+    envs: [development]
