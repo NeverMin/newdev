@@ -1,7 +1,7 @@
 
 
 # Team Website
-https://newdev.cn
+https://www.newdev.cn
 
 
 # Run using Docker
