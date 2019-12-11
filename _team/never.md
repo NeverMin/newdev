@@ -2,15 +2,7 @@
 title: '文 浩坚'
 image: '/images/team/never.jpg'
 jobtitle: '资深技术工程师'
-email: 'never@zammad.com.cn'
-github: 'NeverMin'
----
-
----
-title: '李 乙平'
-image: '/images/team/never.jpg'
-jobtitle: '资深后端工程师'
-email: 'lyp@lyp@newdev.cn'
+email: '&#110;&#101;&#118;&#101;&#114;&#064;&#078;&#101;&#119;&#068;&#101;&#118;&#046;&#099;&#110;'
 github: 'NeverMin'
 ---
 
