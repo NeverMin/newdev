@@ -23,7 +23,15 @@ bodyClass: page-contact
         {% endif %}
       </ul>
       <h2 class="mt-4">留 言</h2>
-        <div id="feedback-form">form will be placed in here</div>
+      <div id="form" class="contact-form">
+        <form accept-charset="UTF-8" method="POST" action="https://formspree.io/xzbeayyp">
+      <fieldset>
+        <input type="text" name="name" placeholder="Your name" v-validate="'required'">
+        <input type="text" name="email" placeholder="Your e-mail" v-validate="'required|email'">
+        <textarea name="message" placeholder="Your message" v-validate="'required'"></textarea>
+        <button type="submit">Send</button>
+      </fieldset>
+    </form>
     </div>
   </div>
 </div>
