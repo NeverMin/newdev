@@ -25,6 +25,7 @@ bodyClass: page-contact
       <h2 class="mt-4">留 言</h2>
       <div id="form" class="contact-form">
         <form accept-charset="UTF-8" method="POST" action="https://formspree.io/xzbeayyp">
+	<input type="hidden" name="_subject" value="New contact!" />
       <fieldset>
         <input type="text" name="name" placeholder="Your name" v-validate="'required'">
         <input type="text" name="email" placeholder="Your e-mail" v-validate="'required|email'">
